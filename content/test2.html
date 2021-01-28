@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Keywords" content="Anchors Html Site" />
+	<meta name="Description" content="Anchors Html Site" />
+	<title> Anchors </title>
+	<link rel="shortcut icon" href="/anchors/assets/images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="/anchors/assets/css/lib/swiper.min.css">
+	<link rel="stylesheet" href="/anchors/assets/css/common.css">
+	<link rel="stylesheet" href="/anchors/assets/css/customlib.css">
+	<script src="/anchors/assets/js/lib/jquery.min.js"></script>
+	<script src="/anchors/assets/js/lib/jquery-ui.min.js"></script>
+	<script src="/anchors/assets/js/common.js"></script>
+	<style>
+		body {overflow-y:hidden;}
+		.main-scr-outer * {transition: none;}
+		.main-scr-outer > div.inner {width:100vw;margin:0 auto;}
+		.main-scr-outer .main-scr-wrap {position:relative;overflow:hidden;height:150px;}
+		.main-scr-outer .main-scr-list {position:absolute;top:0px;left:0px;overflow:hidden;width:200vw;-webkit-transition-timing-function: linear; /* Safari and Chrome */transition-timing-function: linear;}
+		.main-scr-outer .main-scr-list li {float:left;width:960px;font-size:100px;line-height:1.5;white-space:nowrap;}
+		.main-scr-outer.type-vertical .main-scr-wrap {height:200vw;}
+		.main-scr-outer.type-vertical .main-scr-list {display:flex;flex-direction:column-reverse;left:auto;right:100px;overflow:visible;width:auto;height:200vh;}
+		.main-scr-outer.type-vertical .main-scr-list li {transform:rotate(-180deg);float:none;width:150px;height:960px;min-height:960px;writing-mode:vertical-lr;writing-mode:tb-rl;}
+	</style>
+	<script>
+		$(function () {
+			let moveType = 0;
+			let moveSpeed = 20000;
+			let moveWork = false;
+			let movePause = false;
+
+			function mainScrSd () {
+				let tkSlide = $('.main-scr-list'),
+				tkChk = $('.main-scr-outer'),
+				tkSlidePos = $('.main-scr-list').css('left').replace(/[^-\d\.]/g, ''),
+				tkitemFirst = $('.main-scr-list li:first-child');
+
+				if (!tkChk.hasClass('type-vertical')) {
+					tkWidth = $('.main-scr-list').width();
+					tkitemW = $('.main-scr-list li').width();
+					tkSlide.css({'left' : tkSlidePos});
+				} else {
+					tkWidth = $('.main-scr-list').height();
+					tkitemW = $('.main-scr-list li').height();
+					tkSlide.css({'top' : tkSlidePos});
+				}
+				if (moveWork == false) {
+					if (moveType == 0) {
+						if (!tkChk.hasClass('type-vertical')) {
+							tkSlide.css('left', tkSlidePos);
+							tkSlide.animate({ left: -tkitemW }, {
+								duration: moveSpeed, easing: "linear", step: function () {
+									if (movePause == true) {
+										tkSlide.stop();
+									}
+								},
+								complete: function () {
+									tkSlide.append("<li>" + tkitemFirst.html() + "</li>");
+									tkitemFirst.remove();
+									tkSlide.css('left', '0');
+									mainScrSd();
+								}
+							});
+						} else {
+							tkSlide.css('top', tkSlidePos);
+							tkSlide.animate({ top: tkitemW }, {
+								duration: moveSpeed, easing: "linear", step: function () {
+									if (movePause == true) {
+										tkSlide.stop();
+									}
+								},
+								complete: function () {
+									tkSlide.append("<li>" + tkitemFirst.html() + "</li>");
+									tkitemFirst.remove();
+									tkSlide.css('top', '0');
+									mainScrSd();
+								}
+							});
+						}
+					}
+				}
+			}
+			mainScrSd();
+		});
+
+		
+	</script>
+</head>
+
+<body>
+	<!-- s : wrap -->
+	<div class="wrap">
+		<div class="main-scr-outer type-vertical">
+			<div class="inner">
+				<div class="main-scr-wrap">
+					<ul class="main-scr-list">
+						<li>
+							Anything is Possible
+						</li>
+						<li>
+							Anything is Possible
+						</li>
+						<li>
+							Anything is Possible
+						</li>
+						<li>
+							Anything is Possible
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- //recomPro e -->
+
+	</div>
+	<!-- e : wrap -->
+
+	<!-- Swiper JS -->
+	<script src="/anchors/assets/js/lib/swiper.min.js"></script>
+	<script src="/anchors/assets/js/customlib.js"></script>
+</body>
+
+</html>

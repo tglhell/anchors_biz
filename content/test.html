@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Keywords" content="Anchors Html Site" />
+	<meta name="Description" content="Anchors Html Site" />
+	<title> Anchors </title>
+	<link rel="shortcut icon" href="/anchors/assets/images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="/anchors/assets/css/lib/swiper.min.css">
+	<link rel="stylesheet" href="/anchors/assets/css/common.css">
+	<link rel="stylesheet" href="/anchors/assets/css/customlib.css">
+	<script src="/anchors/assets/js/lib/jquery.min.js"></script>
+	<script src="/anchors/assets/js/lib/jquery-ui.min.js"></script>
+	<script src="/anchors/assets/js/common.js"></script>
+	<style>
+		.main-scr-outer * {transition: none;}
+		.main-scr-outer{margin-bottom:40px;}
+		.main-scr-outer > div.inner{width:1400px;margin:0 auto;}
+		.main-scr-outer .slideWrap{position:relative;overflow:hidden;height:337px;margin-bottom:28px;}
+		.main-scr-outer .slideWrap p.bg{position:absolute;top:33px;width:179px;height:324px;background:url("http://image.ssgdfs.com/images/newshin/bg_tic_01.png") no-repeat 0 0;}
+		.main-scr-outer .slideWrap p.bg.side01{left:0px;}
+		.main-scr-outer .slideWrap p.bg.side02{right:-3px;background:url("http://image.ssgdfs.com/images/newshin/bg_tic_02.png") no-repeat 0 0;}
+		.main-scr-outer .slideWrap a.bxBtn{position:absolute;z-index:10;top:117px;margin:0;width:21px;height:39px;background:url("http://image.ssgdfs.com/images/newshin/btn_prev_01.png") no-repeat 0 0;text-indent:-9999px;}
+		.main-scr-outer .slideWrap a.bxBtn.bx-prev{left:179px;}
+		.main-scr-outer .slideWrap a.bxBtn.bx-next{left:auto;right:179px;background:url("http://image.ssgdfs.com/images/newshin/btn_next_01.png") no-repeat 0 0;}
+		.main-scr-outer .tickerSlide{position:absolute;top:0px;left:0px;overflow:hidden;-webkit-transition-timing-function: linear; /* Safari and Chrome */transition-timing-function: linear;}
+		.main-scr-outer .tickerSlide li{float:left;width:200px;padding:33px 0 0 0;}
+		.main-scr-outer .tickerSlide li > a{display:block;}
+		.main-scr-outer .tickerSlide li > a p.thum{text-align:center;margin:29px 0 15px 0;}
+		.main-scr-outer .tickerSlide li > a p.thum img{width:140px;margin:0 auto;}
+		.main-scr-outer .tickerSlide li > a p.txt{height:59px;padding:0 20px;font-size:13px;margin-bottom:12px;text-align:center;color:#424242;line-height:18px;overflow:hidden;}
+		.main-scr-outer .tickerSlide li > a p.txt em{display:block;margin-bottom:5px;text-align:center;font-weight:bold;}
+		.main-scr-outer .tickerSlide li > a p.price{font-family:Roboto;font-size:16px;color:#e5151a;font-weight:bold;text-align:center;}
+		.main-scr-outer .tickerSlide li > a p.price del{display:block;color:#999;font-weight:normal;}
+		.main-scr-outer .tickerSlide li > a p.price del span{font-size:18px;}
+		.main-scr-outer .tickerSlide li > a p.price span.wp{color:#e5151a;font-size:22px;}
+		.main-scr-outer .tickerSlide li > a p.price span.wp span.pr{font-size:22px;color:#e5151a;}
+	</style>
+	<script>
+		$(function () {
+			let moveType = 0;
+			let moveSpeed = 5000;
+			let moveWork = false;
+			let movePause = false;
+
+			function tkSlide() {
+				let $tkSlide = $('#tickerSlide'),
+					$tkSlidePos = $('#tickerSlide').css('left').replace(/[^-\d\.]/g, ''),
+					$tkWidth = $('#tickerSlide').width(),
+					$tklength = $('#tickerSlide li').length,
+					$tkSlideW = $tkWidth + 400,
+					$tkitemW = $('#tickerSlide li').width(),
+					$tkitemFirst = $('#tickerSlide li:first-child');
+
+				$tkSlide.css({
+					'left': $tkSlidePos,
+					'width': $tkWidth + $tkitemW
+				});
+				if (moveWork == false) {
+					if (moveType == 0) {
+						$tkSlide.css('left', $tkSlidePos);
+						$tkSlide.animate({ left: -$tkitemW }, {
+							duration: moveSpeed, easing: "linear", step: function () {
+								if (movePause == true) {
+									$tkSlide.stop();
+								}
+							}, complete: function () {
+								$tkSlide.append("<li>" + $('#tickerSlide li:first-child').html() + "</li>");
+								$('#tickerSlide li:first-child').remove();
+								$tkSlide.css('left', '0');
+								tkSlide();
+							}
+						});
+					}
+				}
+			}
+			tkSlide();
+		});
+	</script>
+</head>
+
+<body>
+	<!-- s : wrap -->
+	<div class="wrap">
+		
+		<!-- <div class="main-ir-wrap">
+			<div class="main-page-logo" ir>
+				<p><img src="/anchors/assets/images/index/img_main_logo.png" alt="Anchors"></p>
+			</div>
+			<div class="main-scr-outer">
+				<p class="main-scr-text"><marquee loop="1" scrollamount="5" direction="up"><strong>Anything is Possible</strong></marquee></p>
+			</div>
+		</div> -->
+
+		<div class="main-scr-outer">
+			<div class="inner">
+				<div class="slideWrap">
+					<ul class="tickerSlide" id="tickerSlide">
+						<li>
+							<a href="#">
+								<p class="thum"><img src="./images/newshin/thum_sample06.gif" alt="" /></p>
+								<p class="txt"><em>1[DIOR]</em>DIOR ADDICT LIP GLOW CORAL</p>
+								<p class="price"><del><span class="pr">$</span>88</del><span class="wp"><span class="pr">$</span>56</span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p class="thum"><img src="./images/newshin/thum_sample06.gif" alt="" /></p>
+								<p class="txt"><em>2[DIOR]</em>DIOR ADDICT LIP GLOW CORAL</p>
+								<p class="price"><del><span class="pr">$</span>88</del><span class="wp"><span class="pr">$</span>56</span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p class="thum"><img src="./images/newshin/thum_sample06.gif" alt="" /></p>
+								<p class="txt"><em>3[DIOR]</em>DIOR ADDICT LIP GLOW CORAL</p>
+								<p class="price"><del><span class="pr">$</span>88</del><span class="wp"><span class="pr">$</span>56</span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p class="thum"><img src="./images/newshin/thum_sample06.gif" alt="" /></p>
+								<p class="txt"><em>4[DIOR]</em>DIOR ADDICT LIP GLOW CORAL</p>
+								<p class="price"><del><span class="pr">$</span>88</del><span class="wp"><span class="pr">$</span>56</span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p class="thum"><img src="./images/newshin/thum_sample06.gif" alt="" /></p>
+								<p class="txt"><em>5[DIOR]</em>DIOR ADDICT LIP GLOW CORAL</p>
+								<p class="price"><del><span class="pr">$</span>88</del><span class="wp"><span class="pr">$</span>56</span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p class="thum"><img src="./images/newshin/thum_sample06.gif" alt="" /></p>
+								<p class="txt"><em>6[DIOR]</em>DIOR ADDICT LIP GLOW CORAL</p>
+								<p class="price"><del><span class="pr">$</span>88</del><span class="wp"><span class="pr">$</span>56</span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p class="thum"><img src="./images/newshin/thum_sample06.gif" alt="" /></p>
+								<p class="txt"><em>7[DIOR]</em>DIOR ADDICT LIP GLOW CORAL</p>
+								<p class="price"><del><span class="pr">$</span>88</del><span class="wp"><span class="pr">$</span>56</span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p class="thum"><img src="./images/newshin/thum_sample06.gif" alt="" /></p>
+								<p class="txt"><em>8[DIOR]</em>DIOR ADDICT LIP GLOW CORAL</p>
+								<p class="price"><del><span class="pr">$</span>88</del><span class="wp"><span class="pr">$</span>56</span>
+								</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- //recomPro e -->
+
+	</div>
+	<!-- e : wrap -->
+
+	<!-- Swiper JS -->
+	<script src="/anchors/assets/js/lib/swiper.min.js"></script>
+	<script src="/anchors/assets/js/customlib.js"></script>
+</body>
+
+</html>
