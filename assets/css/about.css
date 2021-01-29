@@ -32,7 +32,7 @@ video {vertical-align:top;}
 [ir-idx="15"] {transition:all 1.6s ease-in-out;opacity:1;transform:translateY(0px);}
 
 .top-about-outer {transition:none;overflow:hidden;}
-.top-about-outer:after {display:block;width:100%;min-height:680px;background:url(/assets/images/content/about/bg_about_top.jpg) no-repeat center center;background-size:cover;transition:1.5s;transform:scale(1);content:'';}
+.top-about-outer:after {display:block;width:100%;min-height:680px;background:url(/anchors_biz/assets/images/content/about/bg_about_top.jpg) no-repeat center center;background-size:cover;transition:1.5s;transform:scale(1);content:'';}
 .top-about-box {position: relative;z-index:1;}
 .top-about-outer.on:after {transform:scale(1.1);}
 .top-about-box .top-about-tit-outer {position:absolute;top:210px;left:50%;width:100%;transform:translateX(-50%);text-align:center;}
@@ -45,7 +45,7 @@ video {vertical-align:top;}
 .wrap-cont-outer {position:relative;z-index:10;background:#fff;}
 .wrap-cont-box {transition:none;position:relative;z-index:10;overflow:hidden;background:#fff;}
 .wrap-cont-box .content {padding:180px 20px 150px;}
-.wrap-cont-box .wa-bg-box {max-width:1920px;height:100%;margin:0 auto;background:url(/assets/images/content/about/img_award_left_logo.png) no-repeat left bottom;}
+.wrap-cont-box .wa-bg-box {max-width:1920px;height:100%;margin:0 auto;background:url(/anchors_biz/assets/images/content/about/img_award_left_logo.png) no-repeat left bottom;}
 
 .cont-desc-box:after {display:block;content:'';clear:both;}
 .cont-desc-box {display:table;table-layout:fixed;width:100%;margin-top:70px;}

@@ -293,7 +293,7 @@ caption {
 /* button */
 .btn-box {margin-top:40px;font-size:0;text-align:center;}
 .btn {position:relative;padding:20px 0;}
-.btn:before {transition:.5s;content:'';position:absolute;top:00px;bottom:0;left:-15px;right:0;z-index:-1;height:0;background:url(/assets/images/common/bg_hover_line.png)no-repeat center;background-position-y: 6px;}
+.btn:before {transition:.5s;content:'';position:absolute;top:00px;bottom:0;left:-15px;right:0;z-index:-1;height:0;background:url(/anchors_biz/assets/images/common/bg_hover_line.png)no-repeat center;background-position-y: 6px;}
 .btn:hover:before {transition:.5s;height:66px;}
 .btn span {position:relative;padding:0 12px;background:#fff;color:#070057;font-size:18px;font-weight:700;line-height:32px;}
 .btn span:before,
@@ -313,7 +313,7 @@ caption {
 .checkbox-list li {float:left;width:25%;}
 .checkbox input[type="checkbox"] {display:none;}
 .checkbox label{position:relative;display:inline-block;height:22px;font-size:16px;color:#555;padding-left:30px;line-height:22px;}
-.checkbox label:before {position:absolute;top:0;left:0;width:22px;height:22px;background:url(/assets/images/common/ico_checkbox.png) no-repeat;background-size:22px;content:'';}
+.checkbox label:before {position:absolute;top:0;left:0;width:22px;height:22px;background:url(/anchors_biz/assets/images/common/ico_checkbox.png) no-repeat;background-size:22px;content:'';}
 .checkbox label:after {position:absolute;bottom:1px;left:1px;width:20px;height:20px;background:#fff;content:'';transition:0.3s;}
 .checkbox input[type="checkbox"]:checked+label:after {height:0;}
 
@@ -331,8 +331,8 @@ caption {
 .btn-scroll-top:focus span {color:#00c8ff;}
 .btn-scroll-top:focus span:before,
 .btn-scroll-top:focus span:after {background:#00c8ff;}
-.btm-copyright {position:fixed;bottom:50px;left:70px;width:10px;height:273px;z-index:20;font-size:0;background:url(/assets/images/common/img_side_copyright.png) no-repeat;}
-.btn-contact-us {position:fixed;bottom:50px;right:70px;width:28px;height:102px;z-index:20;font-size:0;background:url(/assets/images/common/img_side_contact.png) no-repeat;}
+.btm-copyright {position:fixed;bottom:50px;left:70px;width:10px;height:273px;z-index:20;font-size:0;background:url(/anchors_biz/assets/images/common/img_side_copyright.png) no-repeat;}
+.btn-contact-us {position:fixed;bottom:50px;right:70px;width:28px;height:102px;z-index:20;font-size:0;background:url(/anchors_biz/assets/images/common/img_side_contact.png) no-repeat;}
 .btm-copyright.on,
 .btn-contact-us.on {bottom:215px;}
 .btn-contact-us span {font-weight:300;}
@@ -413,7 +413,7 @@ caption {
 .nav .menu li:nth-child(odd) {opacity:0;-webkit-transform:translateX(-30px);transform:translateX(-30px);}
 .nav .menu li:nth-child(even) {opacity:0;-webkit-transform:translateX(30px);transform:translateX(30px);}
 .nav .menu li a {position:relative;font-size:34px;font-weight:800;line-height:38px;background:#080058;color:#fff;transition:0.3s;}
-.nav .menu li a:before {transition:.5s;content:'';position:absolute;top:-30px;bottom:-30px;left:0;right:0;z-index:-1;height:0;background:url(/assets/images/common/bg_hover_line.png) no-repeat center top;background-position-y:6px}
+.nav .menu li a:before {transition:.5s;content:'';position:absolute;top:-30px;bottom:-30px;left:0;right:0;z-index:-1;height:0;background:url(/anchors_biz/assets/images/common/bg_hover_line.png) no-repeat center top;background-position-y:6px}
 .nav .menu li a:hover:before {transition:.5s;height:96px;}
 .nav.on .menu {opacity:1;z-index:5;}
 .nav.on .menu li {transition-delay:.4s;opacity:1;-webkit-transform:translateX(0);transform:translateX(0);}

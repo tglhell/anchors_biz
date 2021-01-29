@@ -2,9 +2,9 @@
 .contact-us-top .top-skew-box[ir-idx="2"] {transition:all 1.5s cubic-bezier(0.770, 0.000, 0.175, 1.000);transition-delay:1.2s;opacity:1;-webkit-transform:translateX(0px) skewX(-35deg);transform:translateX(0px) skewX(-35deg);}
 
 .contact-us-cont {overflow:hidden;max-width:1120px;margin:0 auto;}
-.contact-us-top {height:1200px;background:url(/assets/images/content/contactus/bg_contactus_top.jpg) no-repeat center top;}
+.contact-us-top {height:1200px;background:url(/anchors_biz/assets/images/content/contactus/bg_contactus_top.jpg) no-repeat center top;}
 .contact-us-top .contact-us-cont {padding-top:327px;}
-.contact-us-top .top-text-box {height:425px;padding:115px 0 0 480px;background:url(/assets/images/content/contactus/bg_anchors_line.png) no-repeat 230px top;vertical-align:middle;}
+.contact-us-top .top-text-box {height:425px;padding:115px 0 0 480px;background:url(/anchors_biz/assets/images/content/contactus/bg_anchors_line.png) no-repeat 230px top;vertical-align:middle;}
 .contact-us-top .top-skew-box {-webkit-transform:skewX(-35deg);transform:skewX(-35deg);}
 .contact-us-top .top-tit {-webkit-transform:skewX(35deg);transform:skewX(35deg);font-size:46px;color:#080058;line-height:58px;}
 .contact-us-top .top-tit strong {font-weight:800;}

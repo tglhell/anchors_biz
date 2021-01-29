@@ -88,7 +88,7 @@ body {overflow-y:hidden;}
 .portfolio-list .project-item .img-cont img {width:100%;}
 .portfolio-list .project-item .project-info {transition:1s;position:absolute;top:0;left:0;right:0;bottom:0;opacity:0;display:block;padding:40px 43px;background:rgba(0,0,0,.5);}
 .portfolio-list .project-item:hover .project-info {opacity:1;}
-.portfolio-list .project-item .project-info .project-tit {display:block;height:64px;padding-left:60px;background:url(/assets/images/content/portfolio/ico_pf_li_tit.png) no-repeat left top;font-size:50px;color:#fff;line-height:64px;}
+.portfolio-list .project-item .project-info .project-tit {display:block;height:64px;padding-left:60px;background:url(/anchors_biz/assets/images/content/portfolio/ico_pf_li_tit.png) no-repeat left top;font-size:50px;color:#fff;line-height:64px;}
 .portfolio-list .project-item .project-info .project-desc {display:block;margin-top:15px;padding-left:60px;font-size:18px;font-weight:300;color:#fff;line-height:22px;}
 .portfolio-list .project-item .project-info .btm-txt {position:absolute;right:47px;bottom:36px;font-size:18px;font-weight:300;color:#fff;}
 .portfolio-list .project-name {margin-top:12px;font-size:18px;color:#070057;}
