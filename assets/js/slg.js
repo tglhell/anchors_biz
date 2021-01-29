@@ -66,18 +66,18 @@ $(function () {
 			if ($(window).width() < 8000) {
 				if (itemLeng < 4) {
 					for (i = 0; i < 3; i++) {
-						$('.main-scr-list').append('<li><img src="/anchors/assets/images/index/img_slg_vertical.png" alt="anything is possible"></li>');
+						$('.main-scr-list').append('<li><img src="/assets/images/index/img_slg_vertical.png" alt="anything is possible"></li>');
 					}
 				}
 			} else {
 				if (itemLeng == 1) {
 					for (i = 0; i < 7; i++) {
-						$('.main-scr-list').append('<li><img src="/anchors/assets/images/index/img_slg_vertical.png" alt="anything is possible"></li>');
+						$('.main-scr-list').append('<li><img src="/assets/images/index/img_slg_vertical.png" alt="anything is possible"></li>');
 					}
 				}
 				if (itemLeng == 4) {
 					for (i = 0; i < 4; i++) {
-						$('.main-scr-list').append('<li><img src="/anchors/assets/images/index/img_slg_vertical.png" alt="anything is possible"></li>');
+						$('.main-scr-list').append('<li><img src="/assets/images/index/img_slg_vertical.png" alt="anything is possible"></li>');
 					}
 				}
 			}

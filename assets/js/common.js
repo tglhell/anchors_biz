@@ -96,31 +96,4 @@ jQuery.event.add(window, 'load', function () {
 	aniItem(function () {
 		irInsert();
 	}, 50);
-
-	// Opinion to be excluded from the design side
-	// if (winWid > 767) {
-	// 	$('<div class="mouse">').appendTo('body');
-	// 	var mouseX = -50, mouseY = -50;
-	// 	var xp = 0, yp = 0;
-	
-	// 	$('html, body').on('mousemove', function (e) {
-	// 		mouseX = e.pageX - 30;
-	// 		mouseY = e.pageY - 30;
-	// 	});
-	
-	// 	setInterval(function () {
-	// 		xp += ((mouseX - xp) / 6);
-	// 		yp += ((mouseY - yp) / 6);
-	// 		$('.mouse').css({top:yp + 'px', left:xp + 'px'});
-	// 	}, 10);
-	
-	// 	$('a, button, [class*="swiper-button"], .swiper-pagination-bullet, .main-step-navi li').on('mouseleave mouseenter', function(e){
-	// 		e.preventDefault();
-	// 		if (e.type == 'mouseleave') {
-	// 			$('.mouse').removeClass('hover');
-	// 		} else {
-	// 			$('.mouse').addClass('hover');
-	// 		}
-	// 	});
-	// }
 });
