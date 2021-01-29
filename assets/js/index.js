@@ -1,7 +1,7 @@
 jQuery.event.add(window, 'load', function () {
 	var alignSize = parseInt($('.footer-cont').css('max-width')),
 	posItem = $('.portfolio-list li'),
-	slideAutoHgt = $('.portfolio-slide a, .portfolio-top-outer'),
+	slideAutoHgt = $('.portfolio-slide .main-slide-outer, .portfolio-top-outer'),
 	brChk = $('.portfolio-list-box .pf-desc br'),
 	toggleClass = $('.btn-toggle');
 
