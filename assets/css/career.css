@@ -14,11 +14,12 @@
 
 .career-list-outer {width:100%;overflow:hidden;}
 .career-list {position:relative;float:left;width:25%;height:40.364583vw;background:#fff;overflow:hidden;}
+.career-list:hover {cursor:pointer;}
 .career-list:nth-child(2n-1){background:#f1f2f2;}
-.career-list:nth-child(1):after {right:1.041666vw;bottom:1.822916vw;width:15.520833vw;height:21.614583vw;background:url(/anchors/assets/images/content/career/img_career_list01.png) no-repeat;background-size:cover;}
-.career-list:nth-child(2):after {right:-10.9375vw;bottom:0;width:25.833333vw;height:40.364583vw;background:url(/anchors/assets/images/content/career/img_career_list02.png) no-repeat;background-size:cover;}
-.career-list:nth-child(3):after {right:-8.333333vw;bottom:0;width:25.364583vw;height:19.895833vw;background:url(/anchors/assets/images/content/career/img_career_list03.png) no-repeat;background-size:cover;}
-.career-list:nth-child(4):after {right:2.604166vw;bottom:0.78125vw;width:13.59375vw;height:21.5625vw;background:url(/anchors/assets/images/content/career/img_career_list04.png) no-repeat;background-size:cover;}
+.career-list:nth-child(1):after {right:1.041666vw;bottom:1.822916vw;width:15.520833vw;height:21.614583vw;background:url(/assets/images/content/career/img_career_list01.png) no-repeat;background-size:cover;}
+.career-list:nth-child(2):after {right:-10.9375vw;bottom:0;width:25.833333vw;height:40.364583vw;background:url(/assets/images/content/career/img_career_list02.png) no-repeat;background-size:cover;}
+.career-list:nth-child(3):after {right:-8.333333vw;bottom:0;width:25.364583vw;height:19.895833vw;background:url(/assets/images/content/career/img_career_list03.png) no-repeat;background-size:cover;}
+.career-list:nth-child(4):after {right:2.604166vw;bottom:0.78125vw;width:13.59375vw;height:21.5625vw;background:url(/assets/images/content/career/img_career_list04.png) no-repeat;background-size:cover;}
 .career-list:after {position:absolute;content:'';}
 .career-list:before {position:absolute;top:0;left:0;right:0;bottom:0;padding:25px;color:#fff;font-size:15px;background:rgba(7,0,87,0.9);content:'view more';z-index:1;opacity:0;text-align:right;}
 .career-list:hover:before {opacity:1;}
@@ -55,7 +56,7 @@
 .apply-form .form-list li label {display:inline-block;color:#000;font-size:20px;font-weight:400;}
 .apply-form .form-list li .inp-text {margin:10px 0 35px;}
 .apply-form .form-list .file-box .file-select {position:relative;width:100%;height:60px;margin:10px 0 35px;}
-.apply-form .form-list .file-box .upload-name {width:100%;height:100%;padding:0 45px 0 18px;line-height: 60px;border:none;background:#f4f4f4 url(/anchors/assets/images/common/ico_upload.png) no-repeat right center;background-size:41px 24px;font-size:15px;}
+.apply-form .form-list .file-box .upload-name {width:100%;height:100%;padding:0 45px 0 18px;line-height: 60px;border:none;background:#f4f4f4 url(/assets/images/common/ico_upload.png) no-repeat right center;background-size:41px 24px;font-size:15px;}
 .apply-form .form-list .file-box input[type="file"] {position:absolute;top:0;left:0;width:100%;height:100%;width:100%;height:100%;opacity:0;}
 
 @keyframes aniTit {
@@ -89,7 +90,7 @@
 }
 
 @media (max-width: 767px) {
-	.career-top .video-cont {min-height:400px;background:url(/anchors/assets/images/content/career/bg_career_top.jpg) no-repeat 40% center;}
+	.career-top .video-cont {min-height:400px;background:url(/assets/images/content/career/bg_career_top.jpg) no-repeat 40% center;}
 	.career-top .video-cont video {display:none;}
 	.career-top .txt-outer {top:100px;padding:0 20px;}
 	.career-top .txt-outer .slogan {font-size:26px;line-height:34px;}
