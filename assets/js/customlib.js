@@ -1,7 +1,7 @@
 $(function(){
 	var option = {},
-		slideLength = $('.portfolio-slide .swiper-slide').length,
-		btnPfCtl = $('.btn-portfolio-control');
+	slideLength = $('.portfolio-slide .swiper-slide').length,
+	btnPfCtl = $('.btn-portfolio-control');
 	if (slideLength == 1) {
 		option = {
 			allowSlidePrev: false,
