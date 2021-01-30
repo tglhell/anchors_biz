@@ -33,7 +33,7 @@ body {overflow-y:hidden;}
 .portfolio-slide li.swiper-slide-active .slide-eyebrow,
 .portfolio-slide li.swiper-slide-active .slide-tit,
 .portfolio-slide li.swiper-slide-active .slide-desc {transition:all .4s cubic-bezier(0.445, 0.05, 0.55, 0.95);transition-delay:.7s;-webkit-transform:translate(0);transform:translate(0);opacity:1;}
-.portfolio-slide li.swiper-slide-active .slide-tit {transition-delay:.1s;transition-timing-function: ease-in-out;transition-duration:.8s;}
+.portfolio-slide li.swiper-slide-active .slide-tit {transition-delay:.1s;transition-timing-function:ease-in-out;transition-duration:.8s;}
 .portfolio-slide li.swiper-slide-active .slide-desc {transition-delay:.9s;}
 .portfolio-list li a.on[ir] {-webkit-transform:translateY(50px);transform:translateY(50px);}
 
