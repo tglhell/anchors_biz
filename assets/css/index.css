@@ -70,7 +70,7 @@ body {overflow-y:hidden;}
 .portfolio-slide .title-cont {transform:translateY(-50%);position:absolute;top:50%;left:150px;z-index:2;display:block;}
 .portfolio-slide .title-cont .slide-eyebrow {display:block;font-size:26px;font-weight:400;color:#fff;line-height:1.5;}
 .portfolio-slide .title-cont .slide-tit {display:block;margin-top:40px;font-size:96px;font-weight:600;color:#fff;line-height:1.5;}
-.portfolio-slide .title-cont .slide-desc {margin-top:40px;font-size:20px;font-weight:500;color:#fff;line-height:28px;}
+.portfolio-slide .title-cont .slide-desc {margin-top:80px;font-size:20px;font-weight:500;color:#fff;line-height:28px;}
 .portfolio-slide .swiper-pagination-bullet {opacity:1;position:relative;width:25px;padding:15px 0;border-radius:0;background:transparent;}
 .portfolio-slide .swiper-pagination-bullet:focus {outline:none;}
 .portfolio-slide .swiper-pagination-bullet:before {content:'';opacity:.5;position:absolute;top:50%;left:0;right:0;height:2px;margin-top:-1px;background:#fff;}
