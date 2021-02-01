@@ -14,10 +14,10 @@ $(function(){
 	} else {
 		option = {
 			centeredSlides: true,
-			autoplay: {
-				delay: 4500,
-				disableOnInteraction: false,
-			},
+			// autoplay: {
+			// 	delay: 4500,
+			// 	disableOnInteraction: false,
+			// },
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
@@ -35,7 +35,21 @@ $(function(){
 		}
 	}
 	var pfSwiper = new Swiper('.portfolio-slide', option);
-	
+
+	$('[class*="swiper-button"]').on('click', function(){
+		slideIndex();
+	});
+
+	function slideIndex() {
+		var slideIdx = $('.swiper-pagination-bullet.swiper-pagination-bullet-active').index() + 1;
+		$('.swiper-pagination-num').text('0' + slideIdx);
+	}
+
+	let swiperIdxChk = setInterval(function(){
+		$('.swiper-button-next').trigger('click');
+		slideIndex();
+	}, 5000);
+
 	btnPfCtl.click(function () {
 		if (!$(this).hasClass('active')) {
 			pfSwiper.autoplay.stop();

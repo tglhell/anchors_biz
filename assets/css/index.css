@@ -32,9 +32,9 @@ body {overflow-y:hidden;}
 .portfolio-slide li.swiper-slide-duplicate-active .slide-desc,
 .portfolio-slide li.swiper-slide-active .slide-eyebrow,
 .portfolio-slide li.swiper-slide-active .slide-tit,
-.portfolio-slide li.swiper-slide-active .slide-desc {transition:all .4s cubic-bezier(0.445, 0.05, 0.55, 0.95);transition-delay:.6s;-webkit-transform:translate(0);transform:translate(0);opacity:1;}
-.portfolio-slide li.swiper-slide-active .slide-tit {transition-delay:.1s;transition-timing-function:ease-in-out;transition-duration:.8s;}
-.portfolio-slide li.swiper-slide-active .slide-desc {transition-delay:.6s;}
+.portfolio-slide li.swiper-slide-active .slide-desc {transition:all .8s cubic-bezier(0.445, 0.05, 0.55, 0.95);transition-delay:.1s;-webkit-transform:translate(0);transform:translate(0);opacity:1;}
+.portfolio-slide li.swiper-slide-active .slide-tit {transition-delay:.15s;}
+.portfolio-slide li.swiper-slide-active .slide-desc {transition-delay:.2s;}
 .portfolio-list li a.on[ir] {-webkit-transform:translateY(50px);transform:translateY(50px);}
 
 .portfolio-top-outer {position:relative;overflow:hidden;height:947px;}
@@ -50,7 +50,7 @@ body {overflow-y:hidden;}
 .portfolio-top-outer .btn-portfolio-in span:after {-webkit-transform:rotate(45deg);transform:rotate(45deg);margin-right:-14px;font-weight:300;}
 .portfolio-top-outer .btn-portfolio-in span:hover:before,
 .portfolio-top-outer .btn-portfolio-in span:hover:after {background:#00c8ff;}
-.portfolio-top-outer .btn-portfolio-control {position:fixed;bottom:180px;right:140px;z-index:2;overflow:hidden;width:20px;height:20px;}
+.portfolio-top-outer .btn-portfolio-control {display:none;position:fixed;bottom:180px;right:140px;z-index:2;overflow:hidden;width:20px;height:20px;}
 .portfolio-top-outer .btn-portfolio-control:active,
 .portfolio-top-outer .btn-portfolio-control:focus {outline:none;}
 .portfolio-top-outer .btn-portfolio-control img {transition:none;width:100%;margin-top:-20px;}
@@ -69,8 +69,8 @@ body {overflow-y:hidden;}
 .portfolio-slide .swiper-slide .main-slide-outer:before {content:'';position:absolute;top:0;bottom:0;left:0;right:0;z-index:2;background:rgba(0,0,0,.2);}
 .portfolio-slide .title-cont {transform:translateY(-50%);position:absolute;top:50%;left:150px;z-index:2;display:block;}
 .portfolio-slide .title-cont .slide-eyebrow {display:block;font-size:26px;font-weight:400;color:#fff;line-height:1.5;}
-.portfolio-slide .title-cont .slide-tit {display:block;margin-top:40px;font-size:96px;font-weight:600;color:#fff;line-height:1.5;}
-.portfolio-slide .title-cont .slide-desc {margin-top:80px;font-size:20px;font-weight:500;color:#fff;line-height:28px;}
+.portfolio-slide .title-cont .slide-tit {display:block;margin-top:26px;font-size:96px;font-weight:600;color:#fff;line-height:1.5;}
+.portfolio-slide .title-cont .slide-desc {margin-top:42px;font-size:20px;font-weight:500;color:#fff;line-height:28px;}
 .portfolio-slide .swiper-pagination-bullet {opacity:1;position:relative;width:25px;padding:15px 0;border-radius:0;background:transparent;}
 .portfolio-slide .swiper-pagination-bullet:focus {outline:none;}
 .portfolio-slide .swiper-pagination-bullet:before {content:'';opacity:.5;position:absolute;top:50%;left:0;right:0;height:2px;margin-top:-1px;background:#fff;}

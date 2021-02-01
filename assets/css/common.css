@@ -7,34 +7,34 @@
 @font-face {
 	font-family:'IBMPlexSans';
 	font-weight: 400;
-	src: url(/assets/fonts/IBMPlexSans-Regular.eot);
-	src: url(/assets/fonts/IBMPlexSans-Regular.eot?#iefix) format('embedded-opentype'),
-				url(/assets/fonts/IBMPlexSans-Regular.woff) format('woff'),
-				url(/assets/fonts/IBMPlexSans-Regular.ttf) format('truetype');
+	src: url(/anchors_biz/assets/fonts/IBMPlexSans-Regular.eot);
+	src: url(/anchors_biz/assets/fonts/IBMPlexSans-Regular.eot?#iefix) format('embedded-opentype'),
+				url(/anchors_biz/assets/fonts/IBMPlexSans-Regular.woff) format('woff'),
+				url(/anchors_biz/assets/fonts/IBMPlexSans-Regular.ttf) format('truetype');
 }
 @font-face {
 	font-family:'IBMPlexSans';
 	font-weight: 500;
-	src: url(/assets/fonts/IBMPlexSans-Medium.eot);
-	src: url(/assets/fonts/IBMPlexSans-Medium.eot?#iefix) format('embedded-opentype'),
-				url(/assets/fonts/IBMPlexSans-Medium.woff) format('woff'),
-				url(/assets/fonts/IBMPlexSans-Medium.ttf) format('truetype');
+	src: url(/anchors_biz/assets/fonts/IBMPlexSans-Medium.eot);
+	src: url(/anchors_biz/assets/fonts/IBMPlexSans-Medium.eot?#iefix) format('embedded-opentype'),
+				url(/anchors_biz/assets/fonts/IBMPlexSans-Medium.woff) format('woff'),
+				url(/anchors_biz/assets/fonts/IBMPlexSans-Medium.ttf) format('truetype');
 }
 @font-face {
 	font-family:'IBMPlexSans';
 	font-weight: 600;
-	src: url(/assets/fonts/IBMPlexSans-SemiBold.eot);
-	src: url(/assets/fonts/IBMPlexSans-SemiBold.eot?#iefix) format('embedded-opentype'),
-				url(/assets/fonts/IBMPlexSans-SemiBold.woff) format('woff'),
-				url(/assets/fonts/IBMPlexSans-SemiBold.ttf) format('truetype');
+	src: url(/anchors_biz/assets/fonts/IBMPlexSans-SemiBold.eot);
+	src: url(/anchors_biz/assets/fonts/IBMPlexSans-SemiBold.eot?#iefix) format('embedded-opentype'),
+				url(/anchors_biz/assets/fonts/IBMPlexSans-SemiBold.woff) format('woff'),
+				url(/anchors_biz/assets/fonts/IBMPlexSans-SemiBold.ttf) format('truetype');
 }
 /* @font-face {
 	font-family:'IBMPlexSans';
 	font-weight: 800;
-	src: url(/assets/fonts/NanumSquareEB.eot);
-	src: url(/assets/fonts/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
-				url(/assets/fonts/NanumSquareEB.woff) format('woff'),
-				url(/assets/fonts/NanumSquareEB.ttf) format('truetype');
+	src: url(/anchors_biz/assets/fonts/NanumSquareEB.eot);
+	src: url(/anchors_biz/assets/fonts/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+				url(/anchors_biz/assets/fonts/NanumSquareEB.woff) format('woff'),
+				url(/anchors_biz/assets/fonts/NanumSquareEB.ttf) format('truetype');
 } */
 
 /* base */
