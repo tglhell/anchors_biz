@@ -24,9 +24,9 @@ body {overflow-y:hidden;}
 }
 
 /* Portfolio Content */
-.portfolio-slide li .slide-eyebrow {-webkit-transform:translateX(100px);transform:translateX(100px);opacity:0;}
-.portfolio-slide li .slide-tit {transition-delay:.05s;-webkit-transform:translateX(100px);transform:translateX(100px);opacity:0;}
-.portfolio-slide li .slide-desc {transition-delay:.1s;-webkit-transform:translateX(100px);transform:translateX(100px);opacity:0;}
+.portfolio-slide li .slide-eyebrow {-webkit-transform:translateX(150px);transform:translateX(150px);opacity:0;}
+.portfolio-slide li .slide-tit {transition-delay:.05s;-webkit-transform:translateX(150px);transform:translateX(150px);opacity:0;}
+.portfolio-slide li .slide-desc {transition-delay:.1s;-webkit-transform:translateX(150px);transform:translateX(150px);opacity:0;}
 .portfolio-slide li.swiper-slide-duplicate-active .slide-eyebrow,
 .portfolio-slide li.swiper-slide-duplicate-active .slide-tit,
 .portfolio-slide li.swiper-slide-duplicate-active .slide-desc,
