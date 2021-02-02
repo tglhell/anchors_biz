@@ -35,11 +35,11 @@ $(function(){
 		actPos = $('.career-list-outer').offset().top;
 		if (scrPos > actPos) {
 			headerOur.addClass('scroll');
-			headerOurCnt.find('.h-logo img').attr('src', '/assets/images/common/img_header_logo.png');
+			headerOurCnt.find('.h-logo img').attr('src', '/anchors_biz/assets/images/common/img_header_logo.png');
 			navBtnMenu.removeClass('other');
 		} else {
 			headerOur.removeClass('scroll');
-			headerOurCnt.find('.h-logo img').attr('src', '/assets/images/common/img_header_logo2.png');
+			headerOurCnt.find('.h-logo img').attr('src', '/anchors_biz/assets/images/common/img_header_logo2.png');
 			navBtnMenu.addClass('other');
 		}
 	});
