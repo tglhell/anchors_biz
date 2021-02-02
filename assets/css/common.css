@@ -353,7 +353,7 @@ caption {
 .header-cont.static {position:static;}
 .header-cont:after {content:'';display:block;clear:both;}
 .header-cont .h-logo {z-index:101;position:relative;display:inline-block;padding:37px 0 24px;font-size:18px;line-height:30px;text-align:center;}
-.header-cont .h-logo a {display:none;width:100px;height:29px;}
+.header-cont .h-logo a {display:none;/* width:100px;height:29px; */}
 .header-cont .h-logo a:first-child {display:block;}
 .header-cont.logo .h-logo a {display:block;}
 .header-cont.logo .h-logo a:first-child {display:none;}
