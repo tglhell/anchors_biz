@@ -2,8 +2,7 @@ jQuery.event.add(window, 'load', function () {
 	var alignSize = parseInt($('.footer-cont').css('max-width')),
 	posItem = $('.portfolio-list li'),
 	slideAutoHgt = $('.portfolio-slide .main-slide-outer, .portfolio-top-outer'),
-	brChk = $('.portfolio-list-box .pf-desc br'),
-	toggleClass = $('.btn-toggle');
+	brChk = $('.portfolio-list-box .pf-desc br');
 
 	$(window).resize(function () {
 		if (winW > 767) {
@@ -11,16 +10,6 @@ jQuery.event.add(window, 'load', function () {
 		}
 		pfItemHgt();
 		txtBrChk();
-	});
-
-	toggleClass.click(function () {
-		if (!$(this).hasClass('active')) {
-			$(this).addClass('active');
-			$('.portfolio-swiper-box').removeClass('off').addClass('on');
-		} else {
-			$(this).removeClass('active');
-			$('.portfolio-swiper-box').removeClass('on').addClass('off');
-		}
 	});
 
 	function pfItemHgt() {

@@ -26,7 +26,7 @@ jQuery.event.add(window, 'load', function () {
 	pageDownBtn.click(function () {
 		$('html, body').stop().animate({ scrollTop: pfHgt }, addMgn * 3, 'easeInQuart');
 		setTimeout(function(){
-			headerOurCnt.find('.h-logo img').attr('src', '/anchors/assets/images/common/img_header_logo.png');
+			headerOurCnt.find('.h-logo img').attr('src', '/anchors_biz/assets/images/common/img_header_logo.png');
 			navBtnMenu.removeClass('other');
 		}, 650);
 	});
@@ -36,12 +36,12 @@ jQuery.event.add(window, 'load', function () {
 		actPos = $('.portfolio-list-outer').offset().top;
 		if (scrPos > actPos) {
 			headerOur.addClass('scroll');
-			headerOurCnt.find('.h-logo img').attr('src', '/anchors/assets/images/common/img_header_logo.png');
+			headerOurCnt.find('.h-logo img').attr('src', '/anchors_biz/assets/images/common/img_header_logo.png');
 			navBtnMenu.removeClass('other');
 			ptSwpBox.css('position', 'absolute');
 		} else {
 			headerOur.removeClass('scroll');
-			headerOurCnt.find('.h-logo img').attr('src', '/anchors/assets/images/common/img_header_logo2.png');
+			headerOurCnt.find('.h-logo img').attr('src', '/anchors_biz/assets/images/common/img_header_logo2.png');
 			navBtnMenu.addClass('other');
 			ptSwpBox.css('position', 'fixed');
 		}

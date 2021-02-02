@@ -48,7 +48,7 @@
 .portfolio-slide .swiper-slide > a {position:relative;overflow:hidden;width:100%;pointer-events:none;}
 .portfolio-slide .swiper-slide > a:before {content:'';position:absolute;top:0;bottom:0;left:0;right:0;z-index:2;background:rgba(0,0,0,.2);}
 .portfolio-slide .title-cont {position:absolute;bottom:155px;left:150px;z-index:2;display:block;}
-.portfolio-slide .title-cont .slide-tit {display:block;padding-left:55px;background:url(/anchors/assets/images/content/portfolio/ico_sl_tit.png) no-repeat left center;font-size:96px;font-weight:600;color:#fff;line-height:1.5;}
+.portfolio-slide .title-cont .slide-tit {display:block;padding-left:55px;background:url(/anchors/assets/images/content/portfolio/ico_sl_tit.png) no-repeat left center;font-size:55px;font-weight:700;color:#fff;line-height:60px;}
 .portfolio-slide .title-cont .slide-desc {display:block;margin-top:20px;font-size:20px;font-weight:300;color:#fff;line-height:28px;}
 .portfolio-slide .swiper-pagination-bullet {opacity:1;position:relative;width:25px;padding:15px 0;border-radius:0;background:transparent;}
 .portfolio-slide .swiper-pagination-bullet:focus {outline:none;}
