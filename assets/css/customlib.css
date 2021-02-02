@@ -28,12 +28,13 @@
 .swiper-pagination-num,
 .swiper-pagination-num-total {position:relative;z-index:1;display:inline-block;font-size:18px;color:#fff;line-height:1.3;vertical-align:middle;}
 
-/* @media (max-width:1920px) and (min-width:768px) {
-	.swiper-container-horizontal>.swiper-pagination-bullets,
-	.swiper-pagination-custom, .swiper-pagination-fraction {bottom:7.708333vw;left:7.291667vw;}
+@media (max-width:1920px) and (min-width:768px) {
+	/* .swiper-container-horizontal>.swiper-pagination-bullets,
+	.swiper-pagination-custom, .swiper-pagination-fraction {bottom:7.708333vw;left:7.291667vw;} */
+	.swiper-ui-box {left:4.16667vw;}
 }
 
-@media (max-width: 1120px) {
+/* @media (max-width: 1120px) {
 	.swiper-button-prev,
 	.swiper-button-next {width:2.678571vw;height:5.357143vw;margin-top:-2.678571vw;}
 	.swiper-button-prev {left:2.232143vw;}

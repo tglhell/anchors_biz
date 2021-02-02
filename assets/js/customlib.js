@@ -26,6 +26,7 @@ $(function(){
 				crossFade: true
 			},
 			loop: true,
+			simulateTouch: false,
 			pagination: {
 				el: '.swiper-pagination',
 				clickable: true
