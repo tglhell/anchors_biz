@@ -16,6 +16,7 @@ jQuery.event.add(window, 'load', function () {
 				} else {
 					$(this).parent().css({'right':'0', 'height':winHgt});
 				}
+				$('.header-cont').find('.h-logo img').attr('src', '/anchors_biz/assets/images/common/img_header_logo2.png');
 				clearInterval(swiperIdxChk);
 			} else {
 				if (winWid > 767) {
@@ -23,6 +24,7 @@ jQuery.event.add(window, 'load', function () {
 				} else {
 					$(this).parent().css({'right':'0', 'height':'60px'});
 				}
+				$('.header-cont').find('.h-logo img').attr('src', '/anchors_biz/assets/images/common/img_header_logo.png');
 				slideStart();
 			}
 		}
