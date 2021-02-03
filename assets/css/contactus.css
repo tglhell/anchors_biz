@@ -16,16 +16,17 @@
 .contact-us-top .contact-us-info li span {margin-right:20px;font-size:25px;line-height:27px;}
 
 .contact-us-outer {padding:250px 166px;background:#fff;}
-.contact-us-mid {position:relative;overflow:hidden;background:#f7f7f7;}
+.contact-us-mid {position:relative;overflow:hidden;background:#f7f7f7;font-size:0;}
 .contact-us-mid:before {content:'';-webkit-transform:rotate(45deg);transform:rotate(45deg);position:absolute;top:-50px;right:-50px;width:100px;height:100px;border-bottom:2px solid #00c8ff;background:#fff;}
+.contact-us-mid:after {content:'';display:inline-block;height:100%;vertical-align:middle;}
 .contact-us-mid:nth-child(even):before {left:-50px;right:auto;border-bottom:0;border-right:2px solid #00c8ff;}
 .contact-us-mid + .contact-us-mid {margin-top:80px;}
-.contact-us-mid .outer-img {float:left;width:40%;vertical-align:middle;}
+.contact-us-mid:nth-child(even) {display:flex;flex-direction:row-reverse;align-items:center;}
+.contact-us-mid .outer-img {display:inline-block;/* float:left; */width:40%;vertical-align:middle;}
 .contact-us-mid .outer-img img {width:100%;}
-.contact-us-mid .map-info-box {display:table-cell;width:60%;padding:0 40px;vertical-align:middle;}
-.contact-us-mid .contact-us-list {display:table-cell;width:60%;padding-left:40px;vertical-align:middle;}
+.contact-us-mid .map-info-box {display:inline-block;width:60%;padding:0 40px;vertical-align:middle;}
+.contact-us-mid .contact-us-list {display:inline-block;width:60%;padding-left:40px;vertical-align:middle;}
 .contact-us-mid .contact-us-list li {font-size:20px;color:#080058;line-height:40px;}
-.contact-us-mid:nth-child(even) .outer-img {float:right;}
 .contact-us-mid:nth-child(even) .contact-us-list li {font-size:24px;}
 .contact-us-mid .map-title-logo {width:120px;}
 .contact-us-mid .map-title-logo img {width:100%;}
@@ -99,6 +100,7 @@
 	.contact-us-top .top-desc li {color:#fff;}
 
 	.contact-us-mid .outer-img {width:100%;}
+	.contact-us-mid:nth-child(even) {display:block;}
 	.contact-us-mid .contact-us-list {width:100%;padding:30px 30px 60px;}
 	.contact-us-mid .contact-us-list li {font-size:18px;}
 	.contact-us-mid:nth-child(even) .contact-us-list li {font-size:20px;}
@@ -106,6 +108,6 @@
 	.contact-us-mid:nth-child(even) .btn-inquiry {right:10px;}
 	.contact-us-mid .map-title-logo {width:100%;}
 	.contact-us-mid .map-title-logo img {width:90px;}
-	.contact-us-mid .map-info-box {padding:30px 30px;}
+	.contact-us-mid .map-info-box {width:100%;padding:30px 30px;}
 	.contact-us-mid .contact-us-map-info li > strong {width:100%;}
 }
