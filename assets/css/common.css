@@ -28,14 +28,48 @@
 				url(/anchors_biz/assets/fonts/IBMPlexSans-SemiBold.woff) format('woff'),
 				url(/anchors_biz/assets/fonts/IBMPlexSans-SemiBold.ttf) format('truetype');
 }
-/* @font-face {
+@font-face {
 	font-family:'IBMPlexSans';
-	font-weight: 800;
-	src: url(/anchors_biz/assets/fonts/NanumSquareEB.eot);
-	src: url(/anchors_biz/assets/fonts/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
-				url(/anchors_biz/assets/fonts/NanumSquareEB.woff) format('woff'),
-				url(/anchors_biz/assets/fonts/NanumSquareEB.ttf) format('truetype');
-} */
+	font-weight: 700;
+	src: url(/anchors_biz/assets/fonts/IBMPlexSans-Bold.eot);
+	src: url(/anchors_biz/assets/fonts/IBMPlexSans-Bold.eot?#iefix) format('embedded-opentype'),
+				url(/anchors_biz/assets/fonts/IBMPlexSans-Bold.woff) format('woff'),
+				url(/anchors_biz/assets/fonts/IBMPlexSans-Bold.ttf) format('truetype');
+}
+
+/* font initializing */
+@font-face {
+	font-family:'IBMPlexSansKR';
+	font-weight: 400;
+	src: url(/anchors_biz/assets/fonts/IBMPlexSansKR-Regular.eot);
+	src: url(/anchors_biz/assets/fonts/IBMPlexSansKR-Regular.eot?#iefix) format('embedded-opentype'),
+				url(/anchors_biz/assets/fonts/IBMPlexSansKR-Regular.woff) format('woff'),
+				url(/anchors_biz/assets/fonts/IBMPlexSansKR-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family:'IBMPlexSansKR';
+	font-weight: 500;
+	src: url(/anchors_biz/assets/fonts/IBMPlexSansKR-Medium.eot);
+	src: url(/anchors_biz/assets/fonts/IBMPlexSansKR-Medium.eot?#iefix) format('embedded-opentype'),
+				url(/anchors_biz/assets/fonts/IBMPlexSansKR-Medium.woff) format('woff'),
+				url(/anchors_biz/assets/fonts/IBMPlexSansKR-Medium.ttf) format('truetype');
+}
+@font-face {
+	font-family:'IBMPlexSansKR';
+	font-weight: 600;
+	src: url(/anchors_biz/assets/fonts/IBMPlexSansKR-SemiBold.eot);
+	src: url(/anchors_biz/assets/fonts/IBMPlexSansKR-SemiBold.eot?#iefix) format('embedded-opentype'),
+				url(/anchors_biz/assets/fonts/IBMPlexSansKR-SemiBold.woff) format('woff'),
+				url(/anchors_biz/assets/fonts/IBMPlexSansKR-SemiBold.ttf) format('truetype');
+}
+@font-face {
+	font-family:'IBMPlexSansKR';
+	font-weight: 700;
+	src: url(/anchors_biz/assets/fonts/IBMPlexSansKR-Bold.eot);
+	src: url(/anchors_biz/assets/fonts/IBMPlexSansKR-Bold.eot?#iefix) format('embedded-opentype'),
+				url(/anchors_biz/assets/fonts/IBMPlexSansKR-Bold.woff) format('woff'),
+				url(/anchors_biz/assets/fonts/IBMPlexSansKR-Bold.ttf) format('truetype');
+}
 
 /* base */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
