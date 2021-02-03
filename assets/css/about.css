@@ -59,7 +59,7 @@ video {vertical-align:top;}
 .service-cont .service-list li {float:left;width:50%;overflow:hidden;transition:3s}
 .service-cont .service-list li:nth-child(2n+2) {width:520px;}
 .service-cont .service-list li span {position:relative;display:inline-block;padding-right:50px;font-size:32px;font-weight:400;line-height:80px;color:#565656;letter-spacing:-1px;}
-.service-cont .service-list li span:after {position:absolute;top:0;right:-10px;width:120%;height:80px;content:'';background:#f7f7f7 url(/assets/images/content/about/img_text_cursor.png) no-repeat 0 center;transition:0.6s;transform:skewX(-30deg)}
+.service-cont .service-list li span:after {position:absolute;top:0;right:-10px;width:120%;height:80px;content:'';background:#f7f7f7 url(/anchors_biz/assets/images/content/about/img_text_cursor.png) no-repeat 0 center;transition:0.6s;transform:skewX(-30deg)}
 .service-cont .service-list li.on span:after {width:50px;right:-15px;}
 
 .bg-gray {background:#2f2f2f;}

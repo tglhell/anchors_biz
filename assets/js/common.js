@@ -4,6 +4,7 @@ jQuery.event.add(window, 'load', function () {
 	winHgt = $(window).height(),
 	scrTop = $('.btn-scroll-top'),
 	aniItem = setTimeout,
+	logoChk = $('.header-cont .h-logo').find('img').attr('src'),
 	toggleClass = $('.btn-toggle');
 
 	$('.nav .btn-menu').on('click', function (e) {
@@ -24,7 +25,7 @@ jQuery.event.add(window, 'load', function () {
 				} else {
 					$(this).parent().css({'right':'0', 'height':'60px'});
 				}
-				$('.header-cont').find('.h-logo img').attr('src', '/anchors_biz/assets/images/common/img_header_logo.png');
+				$('.header-cont').find('.h-logo img').attr('src', logoChk);
 				slideStart();
 			}
 		}
