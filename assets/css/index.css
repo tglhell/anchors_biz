@@ -67,7 +67,7 @@ body {overflow-y:hidden;}
 .portfolio-slide .swiper-slide img {-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);position:absolute;top:50%;left:50%;max-width:none;}
 .portfolio-slide .swiper-slide .main-slide-outer {position:relative;overflow:hidden;display:inline-block;width:100%;}
 .portfolio-slide .swiper-slide .main-slide-outer:before {content:'';position:absolute;top:0;bottom:0;left:0;right:0;z-index:2;background:rgba(0,0,0,.2);}
-.portfolio-slide .title-cont {transform:translateY(-50%);position:absolute;top:50%;left:80px;z-index:2;display:block;font-family:'IBMPlexSansKR', sans-serif;}
+.portfolio-slide .title-cont {transform:translateY(-50%);position:absolute;top:50%;left:80px;z-index:2;display:block;}
 .portfolio-slide .title-cont .slide-eyebrow {display:block;font-size:26px;font-weight:400;color:#fff;line-height:1.5;}
 .portfolio-slide .title-cont .slide-tit {display:block;margin-top:26px;font-size:96px;font-weight:600;color:#fff;line-height:1.5;}
 .portfolio-slide .title-cont .slide-desc {margin-top:42px;font-size:20px;font-weight:500;color:#fff;line-height:28px;}
