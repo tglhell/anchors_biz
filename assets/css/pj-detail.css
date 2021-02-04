@@ -10,6 +10,26 @@
 .main-scr-outer.type-vertical .main-scr-list li {float:none;width:250px;height:1480px;min-height:1480px;text-align:center;}
 .main-scr-outer.type-vertical .main-scr-list li img {width:145px;}
 
+.pj-pagination-list {font-size:0;}
+.pj-pagination-list li {display:inline-block;width:50%;vertical-align:top;}
+.pj-pagination-list li .pj-list-item {position:relative;display:flex;align-items:center;width:100%;min-height:250px;}
+.pj-pagination-list li:nth-child(odd) .pj-list-item {justify-content:space-between;}
+.pj-pagination-list li:nth-child(even) .pj-list-item {justify-content:flex-end;}
+.pj-pagination-list li:nth-child(odd) .pj-list-item .pj-item-cont {padding-left:360px;}
+.pj-pagination-list li:nth-child(even) .pj-list-item .pj-item-cont {padding-right:360px;text-align:right;}
+.pj-pagination-list li .pj-list-item .pj-item-img {position:absolute;top:0;bottom:0;left:0;right:0;z-index:-1;}
+.pj-pagination-list li:nth-child(even) .pj-list-item .pj-item-img {left:-60px;}
+.pj-pagination-list li .pj-list-item .pj-item-img img {max-width:none;}
+.pj-pagination-list li .pj-list-item .pj-item-top {font-size:26px;color:#fff;line-height:1.3;}
+.pj-pagination-list li .pj-list-item .pj-item-text {margin-top:10px;font-size:40px;font-weight:700;color:#fff;line-height:1.3;}
+.pj-pagination-list li .pj-list-item .btn-box {position:absolute;top:50%;width:60px;height:60px;margin-top:-30px;}
+.pj-pagination-list li:nth-child(odd) .pj-list-item .btn-box {left:237px;}
+.pj-pagination-list li:nth-child(even) .pj-list-item .btn-box {right:237px;}
+.pj-pagination-list li .pj-list-item .btn-box a {position:relative;width:100%;height:100%;border:1px solid #fff;border-radius:50%;}
+.pj-pagination-list li .pj-list-item .btn-box a:before {content:'';-webkit-transform:rotate(45deg);transform:rotate(45deg);position:absolute;top:50%;left:50%;width:12px;height:12px;border:1px solid #fff;}
+.pj-pagination-list li:nth-child(odd) .pj-list-item .btn-box a:before {margin:-6px 0 0 -5px;border-width:0 0 2px 2px;}
+.pj-pagination-list li:nth-child(even) .pj-list-item .btn-box a:before {margin:-6px 0 0 -9px;border-width:2px 2px 0 0;}
+
 @media screen and (max-width: 1920px) {
 	.main-scr-outer.type-vertical .main-scr-list {right:13.02083vw;}
 	.main-scr-outer.type-vertical .main-scr-list li {width:13.02083vw;height:77.08333vw;min-height:77.08333vw;}

@@ -1,6 +1,7 @@
 $(function () {
 	let moveType = 0;
-	let moveSpeed = 50000;
+	let moveSpeedW = 50000;
+	let moveSpeedH = 70000;
 	let wSize = 8000;
 	let moveWork = false;
 	let movePause = false;
@@ -12,12 +13,10 @@ $(function () {
 
 	function mainScrSd() {
 		if (!acsChk.hasClass('type-vertical')) {
-			acsWidth = $('.main-scr-list').width();
 			acsitemW = $('.main-scr-list li').width();
 			acsSlide.css({ 'left': acsSlidePos });
 		} else {
-			acsWidth = $('.main-scr-list').height();
-			acsitemW = $('.main-scr-list li').height();
+			acsitemH = $('.main-scr-list li').height();
 			acsSlide.css({ 'top': acsSlidePos });
 		}
 		if (moveWork == false) {
@@ -25,7 +24,7 @@ $(function () {
 				if (!acsChk.hasClass('type-vertical')) {
 					acsSlide.css('left', acsSlidePos);
 					acsSlide.animate({ left: -acsitemW }, {
-						duration: moveSpeed, easing: 'linear', step: function () {
+						duration: moveSpeedW, easing: 'linear', step: function () {
 							if (movePause == true) {
 								acsSlide.stop();
 							}
@@ -39,8 +38,8 @@ $(function () {
 					});
 				} else {
 					acsSlide.css('top', acsSlidePos);
-					acsSlide.animate({ top: acsitemW }, {
-						duration: moveSpeed, easing: 'linear', step: function () {
+					acsSlide.animate({ top: acsitemH }, {
+						duration: moveSpeedH, easing: 'linear', step: function () {
 							if (movePause == true) {
 								acsSlide.stop();
 							}
