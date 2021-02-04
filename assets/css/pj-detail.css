@@ -34,6 +34,10 @@
 	.main-scr-outer.type-vertical .main-scr-list {right:13.02083vw;}
 	.main-scr-outer.type-vertical .main-scr-list li {width:13.02083vw;height:77.08333vw;min-height:77.08333vw;}
 	.main-scr-outer.type-vertical .main-scr-list li img {width:7.55208vw;}
+	.pj-pagination-list li:nth-child(odd) .pj-list-item .btn-box {left:12.34375vw;}
+	.pj-pagination-list li:nth-child(even) .pj-list-item .btn-box {right:12.34375vw;}
+	.pj-pagination-list li:nth-child(odd) .pj-list-item .pj-item-cont {padding-left:18.75vw;}
+	.pj-pagination-list li:nth-child(even) .pj-list-item .pj-item-cont {padding-right:18.75vw;}
 }
 
 .pj-detail-wrap {max-width:1200px;margin:120px auto 0;}
