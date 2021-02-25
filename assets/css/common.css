@@ -377,10 +377,10 @@ caption {
 
 /** jsjs header navi **/
 .nav {position:absolute;top:0;right:0;width:60px;height:90px;padding: 35px 58px 0 0;transition:0.5s;z-index:5;text-align:left;}
-.nav:before {opacity:0;content:'';position:absolute;top:0;bottom:0px;left:0;right:0;background:#080058;}
+.nav:before {transition:all .5s ease-out;opacity:0;content:'';position:absolute;top:0;bottom:0px;left:0;right:0;background:#080058;}
 .nav:after {content:'';display:inline-block;height:100%;vertical-align:middle;}
 .nav.on {width:100vw;height:100vh;}
-.nav.on:before {opacity:1;animation:triangle-box .7s ease;}
+.nav.on:before {opacity:1;transition:all 1.2s ease-in;}
 .nav .btn-menu {position:relative;z-index:3;float:right;width:60px;height:60px;font-size:0;text-align:right;line-height:60px;}
 .nav .btn-menu:before {content:'';display:inline-block;height:100%;vertical-align:middle;}
 .nav .btn-menu span {position:relative;overflow:hidden;display:inline-block;width:60px;height:60px;vertical-align:middle;}
@@ -408,7 +408,7 @@ caption {
 .nav .menu li:nth-child(odd) {opacity:0;-webkit-transform:translateX(-30px);transform:translateX(-30px);}
 .nav .menu li:nth-child(even) {opacity:0;-webkit-transform:translateX(30px);transform:translateX(30px);}
 .nav .menu li {padding:15px 0;}
-.nav .menu li a {transition:0.3s;position:relative;background:#080058;font-size:80px;color:#fff;font-weight:800;line-height:1.3;}
+.nav .menu li a {transition:0.3s;position:relative;font-size:80px;color:#fff;font-weight:800;line-height:1.3;}
 .nav .menu li a:hover {color:#00c8ff;}
 .nav .nav-text-outer {position:relative;margin-top:113px;padding-left:490px;}
 .nav .nav-text-outer .nav-text {font-size:20px;color:#fff;line-height:1.3;}
@@ -426,11 +426,6 @@ caption {
 .cont-tit {margin-bottom:70px;font-size:45px;color:#070057;line-height:60px;} 
 .cont-tit strong {font-weight:800;}
 
-@keyframes triangle-box {
-  50% {top:-188px;}
-  100% {top:-238px;}
-}
-
 @media (max-width: 1120px) and (min-width: 768px) {
 	.nav:before {top:-21.249999vw;}
 	.nav .menu li {padding:3.392857vw 0;}
@@ -443,11 +438,6 @@ caption {
 	.side-fixed .btn-scroll-top {bottom:180px;}
 	.btm-copyright,
 	.btn-contact-us {opacity:0;z-index:-1;}
-
-	@keyframes triangle-box {
-		50% {top:-16.785714vw;}
-		100% {top:-21.249999vw;}
-	}
 }
 
 @media (max-width: 767px) {
