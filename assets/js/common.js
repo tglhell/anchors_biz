@@ -21,7 +21,7 @@ jQuery.event.add(window, 'load', function () {
 				clearInterval(swiperIdxChk);
 			} else {
 				if (winWid > 767) {
-					$(this).parent().css('right', '58px');
+					$(this).parent().css('right', '0');
 				} else {
 					$(this).parent().css({'right':'0', 'height':'60px'});
 				}
