@@ -108,9 +108,9 @@ jQuery.event.add(window, 'load', function () {
 
 	function slideStart() {
 		swiperIdxChk = setInterval(function(){
-			$('.swiper-button-next').trigger('click');
+			$('.main-swiper .swiper-button-next').trigger('click');
 			slideIndex();
-		}, 5000);
+		}, 4500);
 	}
 	slideStart();
 

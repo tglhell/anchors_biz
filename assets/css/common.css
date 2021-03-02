@@ -293,11 +293,11 @@ caption {
 /* button */
 .btn-box {margin-top:40px;font-size:0;text-align:center;}
 .btn {position:relative;padding:20px 0;}
-.btn:before {transition:.5s;content:'';position:absolute;top:00px;bottom:0;left:-15px;right:0;z-index:-1;height:0;background:url(/anchors_biz/assets/images/common/bg_hover_line.png)no-repeat center;background-position-y: 6px;}
-.btn:hover:before {transition:.5s;height:66px;}
-.btn span {position:relative;padding:0 12px;background:#fff;color:#070057;font-size:18px;font-weight:700;line-height:32px;}
+.btn:before {transition:.5s;content:'';position:absolute;top:0;bottom:0;left:-15px;right:0;z-index:-1;height:0;background:url(/anchors_biz/assets/images/common/bg_hover_line.png)no-repeat center;background-position-y: 6px;}
+.btn:hover:before {transition:.5s;height:68px;}
+.btn span {position:relative;padding:0 12px 3px;background:#fff;color:#070057;font-size:18px;font-weight:700;line-height:32px;}
 .btn span:before,
-.btn span:after {position:absolute;top:0;width:3px;height:18px;background:#070057;content:'';}
+.btn span:after {position:absolute;top:5px;width:3px;height:18px;background:#070057;content:'';}
 .btn span:before {left:0;}
 .btn span:after {right:0;}
 

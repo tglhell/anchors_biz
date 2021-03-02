@@ -13,10 +13,10 @@ $(function(){
 	} else {
 		option = {
 			centeredSlides: true,
-			// autoplay: {
-			// 	delay: 4500,
-			// 	disableOnInteraction: false,
-			// },
+			autoplay: {
+				delay: 4500,
+				disableOnInteraction: false,
+			},
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
