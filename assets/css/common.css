@@ -399,7 +399,7 @@ caption {
 .nav.on .btn-menu span:after,
 .nav.on .btn-menu span em {margin-top:-2px;}
 .nav.on .btn-menu span em:after {top:18px;background:#fff;}
-.nav.on .btn-menu span em:before {transition:all 1s cubic-bezier(0.895, 0.03, 0.685, 0.22);opacity:0;}
+.nav.on .btn-menu span em:before {transition:all .7s cubic-bezier(0.39, 0.575, 0.565, 1);opacity:0;}
 .nav.on .btn-menu span em:after {-webkit-transform:rotate(45deg);transform:rotate(45deg);width:40px;}
 .nav.on .btn-menu:hover span:after,
 .nav.on .btn-menu:hover span em:after {transition:all .7s cubic-bezier(0.895, 0.03, 0.685, 0.22);background-color:#01c8ff;}
