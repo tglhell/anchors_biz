@@ -403,7 +403,7 @@ caption {
 .nav.on .btn-menu span em:after {-webkit-transform:rotate(45deg);transform:rotate(45deg);width:40px;}
 .nav.on .btn-menu:hover span:after,
 .nav.on .btn-menu:hover span em:after {transition:all .7s cubic-bezier(0.895, 0.03, 0.685, 0.22);background-color:#01c8ff;}
-.nav .nav-mid-cont {display:inline-block;vertical-align:middle;}
+.nav .nav-mid-cont {display:inline-block;vertical-align:middle;pointer-events:none;}
 .nav .menu {transition:none;opacity:0;z-index:-1;display:inline-block;padding-left:490px;vertical-align:middle;}
 .nav .menu li:nth-child(odd) {opacity:0;-webkit-transform:translateX(-30px);transform:translateX(-30px);}
 .nav .menu li:nth-child(even) {opacity:0;-webkit-transform:translateX(30px);transform:translateX(30px);}
@@ -415,6 +415,7 @@ caption {
 .nav .nav-text-outer .nav-text + .nav-text {margin-top:10px;}
 .nav .nav-text-outer .nav-text:nth-child(odd) {opacity:0;-webkit-transform:translateX(-30px);transform:translateX(-30px);}
 .nav .nav-text-outer .nav-text:nth-child(even) {opacity:0;-webkit-transform:translateX(30px);transform:translateX(30px);}
+.nav.on .nav-mid-cont {pointer-events:auto;}
 .nav.on .menu {opacity:1;z-index:5;}
 .nav.on .menu li {transition-delay:.4s;opacity:1;-webkit-transform:translateX(0);transform:translateX(0);}
 .nav.on .menu li:nth-child(2) {transition-delay:.7s;}

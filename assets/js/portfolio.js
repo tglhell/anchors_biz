@@ -12,8 +12,7 @@ jQuery.event.add(window, 'load', function () {
 	headerOurCnt = $('.header-cont'),
 	brChk = $('.portfolio-list-box .pf-desc br'),
 	btnMoreItem = $('.portfolio-list-box .btn-more'),
-	navBtnMenu = $('.nav .btn-menu'),
-	toggleClass = $('.btn-toggle');
+	navBtnMenu = $('.nav .btn-menu');
 
 	$(window).resize(function () {
 		if (winW > 767) {
@@ -68,16 +67,6 @@ jQuery.event.add(window, 'load', function () {
 		posItem.removeClass('disabled');
 		posItem.parent().css('height', 'auto');
 		$(this).parent().hide();
-	});
-
-	toggleClass.click(function () {
-		if (!$(this).hasClass('active')) {
-			$(this).addClass('active');
-			$('.portfolio-swiper-box').removeClass('off').addClass('on');
-		} else {
-			$(this).removeClass('active');
-			$('.portfolio-swiper-box').removeClass('on').addClass('off');
-		}
 	});
 
 	function pfItemHgt() {
