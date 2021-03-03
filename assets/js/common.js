@@ -5,7 +5,9 @@ jQuery.event.add(window, 'load', function () {
 	scrTop = $('.btn-scroll-top'),
 	aniItem = setTimeout,
 	logoChk = $('.header-cont .h-logo').find('img').attr('src'),
-	toggleClass = $('.btn-toggle');
+	toggleClass = $('.btn-toggle'),
+	mainSwpChk = $('.main-swiper .swiper-pagination-bullet,' +
+	'.main-swiper [class*="swiper-button"');
 
 	$('.nav .btn-menu').on('click', function (e) {
 		e.preventDefault();
@@ -114,7 +116,7 @@ jQuery.event.add(window, 'load', function () {
 	}
 	slideStart();
 
-	$('.swiper-pagination-bullet, [class*="swiper-button"').click(function(){
+	mainSwpChk.click(function(){
 		clearInterval(swiperIdxChk);
 		setTimeout(function(){
 			slideStart();
