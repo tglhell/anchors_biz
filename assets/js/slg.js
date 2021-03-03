@@ -57,14 +57,6 @@ $(function () {
 	}
 	mainScrSd();
 
-	// $('.nav .btn-menu').click(function(){
-	// 	if (!$(this).parent().hasClass('on')){
-	// 		acsSlide.stop();
-	// 	} else {
-	// 		mainScrSd();
-	// 	}
-	// });
-
 	$(window).on('resize', function(){
 		itemLengthChk();
 	});

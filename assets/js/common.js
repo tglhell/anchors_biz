@@ -114,6 +114,13 @@ jQuery.event.add(window, 'load', function () {
 	}
 	slideStart();
 
+	$('.swiper-pagination-bullet, [class*="swiper-button"').click(function(){
+		clearInterval(swiperIdxChk);
+		setTimeout(function(){
+			slideStart();
+		}, 0);
+	});
+
 	function irInsert() {
 		$('[ir]').each(function (index) {
 			var iNum = showMainList.length, _this = $(this);
