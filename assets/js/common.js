@@ -125,7 +125,7 @@ jQuery.event.add(window, 'load', function () {
 
 	function irInsert() {
 		$('[ir]').each(function (index) {
-			var iNum = showMainList.length, _this = $(this);
+			iNum = showMainList.length, _this = $(this);
 			if (_this.children().is('li')) {
 				_this.removeAttr('ir').attr('ir-group-idx', (index + 1));
 			} else {
@@ -141,8 +141,11 @@ jQuery.event.add(window, 'load', function () {
 						}, 300 * i);
 					}(i));
 				}
-			}, 1200);
+			}, 2000);
 		});
+		aniItem(function () {
+			$('[ir-group-idx]').removeAttr('ir-group-idx').find('li').removeClass('active');
+		}, (iNum * 300) + 2000);
 	}
 
 	aniItem(function () {
