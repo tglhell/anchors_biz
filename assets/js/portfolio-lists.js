@@ -7,10 +7,10 @@ jQuery.event.add(window, 'load', function () {
 		const _thisContItemLabel = _thisContItem.find('li' + '[data-label=' + _thisLabel + ']');
 		_this.closest('li').addClass('on').siblings().removeClass('on');
 		if (_thisLabel == 'All') {
-			_thisContItem.find('li').removeClass('hide');
+			_thisContItem.find('li').removeAttr('class');
 		} else {
 			_thisContItem.find('li').addClass('hide');
-			_thisContItemLabel.removeClass('hide');
+			_thisContItemLabel.removeAttr('class');
 		}
 	});
 });
