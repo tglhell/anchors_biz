@@ -13,8 +13,8 @@ jQuery.event.add(window, 'load', function () {
 			_thisContItemList.removeClass('active');
 			setTimeout(function(){
 				_thisContItemList.removeAttr('class');
-			}, 800);
-			_thisContItem.stop().animate({'overflow':'visible'}, 800, function(){
+			}, 900);
+			_thisContItem.stop().animate({'overflow':'visible'}, 900, function(){
 				for (i = 0; i <= _thisContItemListLeng; i++) {
 					$(function (i) {
 						setTimeout(function () {
@@ -28,8 +28,8 @@ jQuery.event.add(window, 'load', function () {
 			setTimeout(function(){
 				_thisContItemList.addClass('hide');
 				_thisContItemLabel.removeAttr('class');
-			}, 800);
-			_thisContItem.stop().animate({'overflow':'visible'}, 800, function(){
+			}, 900);
+			_thisContItem.stop().animate({'overflow':'visible'}, 900, function(){
 				for (i = 0; i <= _thisContItemLabelLeng; i++) {
 					$(function (i) {
 						setTimeout(function () {
