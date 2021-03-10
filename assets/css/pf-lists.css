@@ -1,0 +1,129 @@
+.pf-list-wrap {
+	padding: 120px 200px;
+}
+
+.pf-list-cont {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.pf-list-top-text {
+	font-size: 32px;
+	font-weight: 600;
+	color: #222;
+	line-height: 1.75;
+}
+
+.pf-list-mid-text {
+	font-size: 28px;
+	font-weight: 500;
+	color: #222;
+	line-height: 1.71;
+}
+
+.pf-list-top-text + .pf-list-mid-text {
+	margin-top: 36px;
+}
+
+.pf-tab-wrap {
+	margin-top: 158px;
+}
+
+.pf-tab-list {
+	display: -webkit-box;
+  display: -moz-box;
+	display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.pf-tab-list li + li {
+	margin-left: 59px;
+}
+
+.pf-tab-list li .pf-tab-item a {
+	font-size: 46px;
+	font-weight: 700;
+	color: #ccc;
+	line-height: 1.13;
+}
+
+.pf-tab-list li .pf-tab-item a:hover {
+	color: #bbb;
+}
+
+.pf-tab-list li.on .pf-tab-item a {
+	color: #00c8ff;
+	pointer-events: none;
+}
+
+.pf-tab-cont {
+	margin-top: 60px;
+}
+
+.pf-cont-list {
+	margin: 0 -50px;
+	font-size: 0;
+}
+
+.pf-cont-list li {
+	display: inline-block;
+	width: 50%;
+	margin-top: 67px;
+	padding: 0 50px;
+}
+
+.pf-cont-list li.hide {
+	display: none;
+}
+
+.pf-cont-list li .pf-cont-item span {
+	display: inline-block;
+}
+
+.pf-cont-list li .pf-cont-item .pf-cont-img {
+	overflow: hidden;
+	position: relative;
+}
+
+.pf-cont-list li .pf-cont-item .pf-cont-img:before {
+	content: '';
+	position: absolute;
+	top: -57px;
+	left: -58px;
+	z-index: 3;
+	width: 100px;
+	height: 100px;
+	background: #fff;
+	transform: rotate(-45deg);
+}
+
+.pf-cont-list li .pf-cont-item a .pf-cont-img img {
+	transition-duration: .3s;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.pf-cont-list li .pf-cont-item a:hover .pf-cont-img img {
+	transition-duration: .3s;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.pf-cont-list li .pf-cont-item .pf-cont-info {
+	padding-top: 32px;
+}
+
+.pf-cont-list li .pf-cont-item .pf-cont-info .pf-info-tit {
+	font-size: 28px;
+	font-weight: 600;
+	color: #222;
+	line-height: 1.5;
+}
+
+.pf-cont-list li .pf-cont-item .pf-cont-info .pf-info-date {
+	font-size: 22px;
+	font-weight: 500;
+	color: #999;
+	line-height: 1.9;
+}
