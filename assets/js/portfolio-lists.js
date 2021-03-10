@@ -5,9 +5,9 @@ jQuery.event.add(window, 'load', function () {
 		const _thisLabel = _this.text();
 		const _thisContItem = $('.pf-cont-list');
 		const _thisContItemList = _thisContItem.find('li');
-		const _thisContItemListLeng = _thisContItemList.length;
 		const _thisContItemLabel = _thisContItem.find('li' + '[data-label=' + _thisLabel + ']');
-		const _thisContItemLabelLeng = _thisContItemLabel.length;
+		let _thisContItemListLeng = _thisContItemList.length;
+		let _thisContItemLabelLeng = _thisContItemLabel.length;
 		_this.closest('li').addClass('on').siblings().removeClass('on');
 		if (_thisLabel == 'All') {
 			_thisContItemList.removeClass('active');
