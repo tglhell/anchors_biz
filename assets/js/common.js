@@ -92,6 +92,17 @@ jQuery.event.add(window, 'load', function () {
 					}(i));
 				}
 			}, 2000);
+			if ($('.pf-list-wrap').length == 1) {
+				aniItem(function () {
+					for (i = 0; i <= iNum; i++) {
+						$(function (i) {
+							aniItem(function () {
+								showMainList.eq(i).addClass('active');
+							}, 300 * i);
+						}(i));
+					}
+				}, 1000);
+			}
 		});
 	}
 
