@@ -93,9 +93,9 @@ jQuery.event.add(window, 'load', function () {
 				}
 			}, 2000);
 		});
-		aniItem(function () {
-			$('[ir-group-idx]').removeAttr('ir-group-idx').find('li').removeClass('active');
-		}, (iNum * 300) + 2000);
+		// aniItem(function () {
+		// 	$('[ir-group-idx]').removeAttr('ir-group-idx').find('li').removeClass('active');
+		// }, (iNum * 300) + 2000);
 	}
 
 	aniItem(function () {

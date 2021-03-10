@@ -54,6 +54,7 @@
 
 .pf-tab-list li.on .pf-tab-item a {
 	color: #00c8ff;
+	pointer-events: none;
 }
 
 .pf-tab-cont {
