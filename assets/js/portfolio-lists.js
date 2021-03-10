@@ -14,7 +14,7 @@ jQuery.event.add(window, 'load', function () {
 			setTimeout(function(){
 				_thisContItemList.removeAttr('class');
 			}, 800);
-			_thisContItem.animate({'overflow':'visible'}, 800, function(){
+			_thisContItem.stop().animate({'overflow':'visible'}, 800, function(){
 				for (i = 0; i <= _thisContItemListLeng; i++) {
 					$(function (i) {
 						setTimeout(function () {
