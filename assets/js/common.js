@@ -25,7 +25,7 @@ jQuery.event.add(window, 'load', function () {
 				} else {
 					$(this).parent().css({'right':'0', 'height':'60px'});
 				}
-				$('body').removeClass('n-scroll');
+				$('body').removeClass('n-scroll').removeAttr('style class');
 				$('.header-cont').find('.h-logo img').attr('src', logoChk);
 			}
 		}

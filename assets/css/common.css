@@ -217,6 +217,9 @@ caption {
 	line-height:0;
 	visibility:hidden;
 }
+body {
+	overflow-x: hidden;
+}
 body::-webkit-scrollbar {
 	width: 5px;
 }
