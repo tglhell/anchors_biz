@@ -221,7 +221,7 @@ body {
 	overflow-x: hidden;
 }
 body::-webkit-scrollbar {
-	width: 5px;
+	width: 7px;
 }
 body::-webkit-scrollbar-thumb {
 	border-radius: 5px;
