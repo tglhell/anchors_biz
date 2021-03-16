@@ -387,10 +387,10 @@ body.n-scroll::-webkit-scrollbar-track {
 .footer address {margin-top:20px;color:#666;font-size:18px;letter-spacing:-1px;}
 
 /** jsjs header navi **/
-.nav {position:absolute;top:0;right:0;width:60px;height:90px;padding: 35px 58px 0 0;transition:0.5s;z-index:5;text-align:left;}
-.nav:before {transition:all .5s ease-out;opacity:0;content:'';position:absolute;top:0;bottom:0px;left:0;right:0;background:#080058;}
+.nav {position:absolute;top:0;right:0;width:100vw;height:90px;padding: 35px 58px 0 0;transition:0.5s;z-index:5;text-align:left;}
+.nav:before {transition:all .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);opacity:0;content:'';position:absolute;top:0;bottom:0px;left:0;right:0;background:#080058;}
 .nav:after {content:'';display:inline-block;height:100%;vertical-align:middle;}
-.nav.on {width:100vw;height:100vh;}
+.nav.on {transition:height .7s cubic-bezier(0.445, 0.05, 0.55, 0.95);height:100vh;}
 .nav.on:before {opacity:1;transition:all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);}
 .nav .btn-menu {position:relative;z-index:3;float:right;width:60px;height:60px;font-size:0;text-align:right;line-height:60px;}
 .nav .btn-menu:before {content:'';display:inline-block;height:100%;vertical-align:middle;}
