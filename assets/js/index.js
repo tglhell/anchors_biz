@@ -4,8 +4,7 @@ jQuery.event.add(window, 'load', function () {
 	slideAutoHgt = $('.portfolio-slide .main-slide-outer, .portfolio-top-outer'),
 	brChk = $('.portfolio-list-box .pf-desc br'),
 	mainSwpChk = $('.main-swiper .swiper-pagination-bullet,' +
-	'.main-swiper [class*="swiper-button"'),
-	navBtn = $('.nav .btn-menu');
+	'.main-swiper [class*="swiper-button"');
 
 	$(window).resize(function () {
 		if (winW > 767) {
@@ -45,7 +44,9 @@ jQuery.event.add(window, 'load', function () {
 			slideIndex();
 		}, 4500);
 	}
-	slideStart();
+	setTimeout(function() {
+		slideStart();
+	}, 2000);
 
 	function pfItemHgt() {
 		setTimeout(function () {

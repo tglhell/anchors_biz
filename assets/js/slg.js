@@ -5,11 +5,11 @@ $(function () {
 	let wSize = 8000;
 	let moveWork = false;
 	let movePause = false;
-	let acsSlide = $('.main-scr-list');
-	let acsChk = $('.main-scr-outer');
-	let acsSlidePos = $('.main-scr-list').css('left').replace(/[^-\d\.]/g, '');
-	let acsItemFirst = $('.main-scr-list li:first-child');
-	let acsItemLeng = acsSlide.find('li').length;
+	const acsSlide = $('.main-scr-list');
+	const acsChk = $('.main-scr-outer');
+	const acsSlidePos = $('.main-scr-list').css('left').replace(/[^-\d\.]/g, '');
+	const acsItemFirst = $('.main-scr-list li:first-child');
+	const acsItemLeng = acsSlide.find('li').length;
 
 	function mainScrSd() {
 		if (!acsChk.hasClass('type-vertical')) {
