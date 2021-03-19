@@ -17,7 +17,7 @@ jQuery.event.add(window, 'load', function () {
 				} else {
 					$(this).parent().css({'right':'0', 'height':winHgt});
 				}
-				$('body').addClass('n-scroll').css('width', winWid);
+				$('body').addClass('n-scroll');
 				$('.header-cont').find('.h-logo img').attr('src', '/anchors_biz/assets/images/common/img_header_logo2.png');
 			} else {
 				if (winWid > 767) {
@@ -25,7 +25,7 @@ jQuery.event.add(window, 'load', function () {
 				} else {
 					$(this).parent().css({'right':'0', 'height':'60px'});
 				}
-				$('body').removeClass('n-scroll').removeAttr('style class');
+				$('body').removeAttr('class');
 				$('.header-cont').find('.h-logo img').attr('src', logoChk);
 			}
 		}
