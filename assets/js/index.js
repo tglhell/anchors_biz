@@ -35,6 +35,7 @@ jQuery.event.add(window, 'load', function () {
 		var slideIdxLeng = $('.swiper-pagination-bullet').length;
 		$('.swiper-pagination-num').text('0' + slideIdx);
 		$('.swiper-pagination-num-total').text('0' + slideIdxLeng);
+		$('.swiper-pagination-bullet:nth-child(-n+' + (slideIdx - 1) + ')').addClass('swiper-pagination-bullet-active');
 	}
 	slideIndex();
 
