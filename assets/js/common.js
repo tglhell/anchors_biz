@@ -37,9 +37,14 @@ jQuery.event.add(window, 'load', function () {
 		if (scrPos > 0) {
 			$('.header').addClass('scroll');
 			scrTop.addClass('active');
+			if (scrPos > scrPosSum) {
+				scrTop.css({'bottom':(scrPos - scrPosSum) + 20, 'transition':'none'});
+			} else {
+				scrTop.attr('style', 'bottom:20px !important;transition:none;');
+			}
 		} else {
 			$('.header').removeClass('scroll');
-			scrTop.removeClass('active');
+			scrTop.removeClass('active').removeAttr('style');
 		}
 
 		if ($('.main').length == 0) {
