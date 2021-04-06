@@ -1,13 +1,13 @@
 jQuery.event.add(window, 'load', function () {
 	var showMainList = $('[ir] > li'),
-	winWid = $(window).width(),
-	winHgt = $(window).height(),
 	scrTop = $('.btn-scroll-top'),
 	aniItem = setTimeout,
 	logoChk = $('.header-cont .h-logo').find('img').attr('src'),
 	toggleClass = $('.btn-toggle');
 
 	$('.nav .btn-menu').on('click', function (e) {
+		var winWid = $(window).width(),
+		winHgt = $(window).height();
 		e.preventDefault();
 		$(this).closest('.nav').toggleClass('on');
 		if ($(this).parent().hasClass('full')) {
@@ -61,14 +61,14 @@ jQuery.event.add(window, 'load', function () {
 		$(this).blur();
 	});
 
-	// $(window).on('orientationchange', function () {
-	// 	var orientation = window.orientation;
-	// 	if (orientation == 90 || orientation == -90) {
-	// 		location.reload();
-	// 	} else {
-	// 		location.reload();
-	// 	} 
-	// });
+	$(window).on('orientationchange', function () {
+		var orientation = window.orientation;
+		if (orientation == 90 || orientation == -90) {
+			location.reload();
+		} else {
+			location.reload();
+		} 
+	});
 
 	toggleClass.click(function () {
 		if (!$(this).hasClass('active')) {
